@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Simple Interest"
+    android:textAlignment="center"
+    android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="------------------------------------------"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:id="@+id/amt"
+        android:textAlignment="center"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Interest Rate (In %)"
+        android:id="@+id/Rate"
+        android:textAlignment="center"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter TIme (In Year)"
+        android:id="@+id/time"
+        android:textAlignment="center"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Si"
+        android:text="Calculate"
+        app:cornerRadius="100dp"
+        app:rippleColor="#BF1818"
+        app:strokeColor="#D11A1A"
+        tools:visibility="visible" />
+</LinearLayout>
